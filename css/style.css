@@ -40,7 +40,7 @@ ul{
 .top-menu ul li{
 	display:inline-block;
 	float:left;
-	border-right: 0px solid #583F5E;
+	border-right: 1.5px solid #583F5E;
 }
 .top-menu ul li a{
 	text-decoration: none;
