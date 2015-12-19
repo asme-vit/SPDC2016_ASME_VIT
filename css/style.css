@@ -456,6 +456,22 @@ li.span-2{
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
+}
+.host-section-head h3{
+	text-transform: uppercase;
+	color: #FFF;
+	font-weight: 500;
+	font-size: 3.2em;
+}	
+.host-section-head p{
+	color: #FFF;
+	font-weight: 400;
+	font-size: 1.3em;
+}
+.host-section{
+	padding: 4em 0;
+	position:relative;
+	background: url("../images/pattern-1.jpg");
 }	
 #portfoliolist .portfolio {
 	-webkit-box-sizing: border-box;
