@@ -55,7 +55,7 @@ h1 {
 	  width: 25%;
 	  margin: 3% auto 0;
 	  padding: 25px;
-	  height: 310px;
+	  height: 760px;
 	  border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -88,6 +88,21 @@ input.password {
 	  outline: none;
 	  border: none;
 	  width: 86%;
+	  margin: 0 auto;
+	  padding: 1.2em 3em 1.2em 1em;
+	  background: #3a3a46 url(../loginimages/key.png)no-repeat 390px 16px;
+	  color: #B4B4B4;
+	  	  border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		-o-border-radius: 3px;
+}
+
+select,option{
+	  font-family: 'Open Sans', sans-serif;
+	  outline: none;
+	  border: none;
+	  width: 100%;
 	  margin: 0 auto;
 	  padding: 1.2em 3em 1.2em 1em;
 	  background: #3a3a46 url(../loginimages/key.png)no-repeat 390px 16px;

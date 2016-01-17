@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<?php
+if(isset($_GET['err'])){
+    if ($_GET['err']=="sent") {
+        echo '<script>
+            alert("We will contact you shortly!!");
+        </script>';
+    }
+}
+?>
 <html>
 <head>
 <title>SPDC | HOME</title>
@@ -53,7 +62,7 @@
 		<div class="top-header navbar-fixed-top">
 			<div class="container">
 				<div class="logo">
-					<a href="index.html"><img src="images/asme_logo1.png" class="img-responsive" alt="" /></a>			
+					<a href="index.php"><img src="images/asme_logo1.png" class="img-responsive" alt="" /></a>			
 				</div>
 				<div class="top-menu">
 				  <span class="menu"> </span>
@@ -62,7 +71,7 @@
 						<li><a href="#portfolio" class="scroll">Student Design Competition</a></li>
 						<li><a href="#portfolio" class="scroll">Old Guard Competitions</a></li>
 						<li><a href="#contact-section" class="scroll">CONTACT US</a></li>
-						<li><a href="login.html" class="scroll">REGISTER</a></li>
+						<li><a href="login.php">REGISTER</a></li>
 						<div class="clearfix"></div>
 					</ul>
 				</div>
@@ -120,7 +129,7 @@
 				  <div class="caption">
 					<h3><span class="color-3">STUDENT PROFESSIONAL DEVELOPMENT CONFERENCE</span></h3>
 					<p>SPDC is an incredible learning experience for aspiring young students. This conference helps you to develop your knowledge and skills required in the engineering workplace.</p>
-					<br><br><br><br>	<a class="morebtn" href="#">REGISTER</a>
+					<br><br><br><br>	<a class="morebtn" href="login.php">REGISTER</a>
 				  </div>
 				</li>
 				<li>
@@ -128,7 +137,7 @@
 					<div class="caption">
 					<h3><span class="color-2">STUDENT PROFESSIONAL DEVELOPMENT CONFERENCE</span> </h3>
 					<p>You also get to showcase your design projects and most of all meet like minded people and expand your network while also getting new and exciting ideas for future projects.</p>
-					<br><br><br><br>	  <a class="morebtn" href="#">REGISTER</a>
+					<br><br><br><br>	  <a class="morebtn" href="login.php">REGISTER</a>
 				  </p>
 				  </div>
 				</li>
@@ -137,7 +146,7 @@
 				  <div class="caption">
 					<h3><span class="color-1">STUDENT PROFESSIONAL DEVELOPMENT CONFERENCE</span></h3>
 					<p>You also get to showcase your design projects and most of all meet like minded people and expand your network while also getting new and exciting ideas for future projects.</p>
-					<br><br><br><br>	  <a class="morebtn" href="#">REGISTER</a>
+					<br><br><br><br>	  <a class="morebtn" href="login.php">REGISTER</a>
 				  </div>
 				</li>
 				<li>
@@ -145,7 +154,7 @@
 				  <div class="caption">
 					<h3><span class="color-1">STUDENT PROFESSIONAL DEVELOPMENT CONFERENCE</span></h3>
 					<p>LEARN,CONNECT,MAKE A DIFFERENCE.</p>
-					<br><br><br><br>	  <a class="morebtn" href="#">REGISTER</a>
+					<br><br><br><br>	  <a class="morebtn" href="login.php">REGISTER</a>
 				  </div>
 				</li>
 				<li>
@@ -153,7 +162,7 @@
 				  <div class="caption">
 					<h3><span class="color-3">STUDENT PROFESSIONAL DEVELOPMENT CONFERENCE</span></h3>
 					<p>SPDC is an incredible learning experience for aspiring young students. This conference helps you to develop your knowledge and skills required in the engineering workplace.</p>
-					<br><br><br><br>	<a class="morebtn" href="#">REGISTER</a>
+					<br><br><br><br>	<a class="morebtn" href="login.php">REGISTER</a>
 				  </div>
 				</li>
 			  </ul>
@@ -627,12 +636,12 @@ autorickshaws and cabs to take you to VIT university. <br><br><br><br>
 				<div class="contact-section-grids">
 				    <div class="container">
 						<div class="col-md-8 contact-section-left-grid">
-							<form>
-								<input type="text" class="text" value="your name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'your name';}">
-								<input type="text" class="text" value="e-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'e-mail';}">
-								<input type="text" class="text" value="The Subject" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'The Subject';}">
-								 <textarea onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
-								<input type="button" value="Submit">
+							<form name="form1" action="query.php" method="post">
+								<input type="text" name="name" class="text" placeholder="Your Name" required>
+								<input type="email" name="email" class="text" placeholder="e-mail" required>
+								<input type="text" name="subject" class="text" placeholder="The Subject" required>
+								 <textarea name="message" onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
+								<input type="submit" class="button" value="Submit">
 							</form>
 						</div>
 						<div class="col-md-4 contact-section-right-grid">

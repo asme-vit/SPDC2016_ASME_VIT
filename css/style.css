@@ -812,7 +812,7 @@ article:nth-child(2) > div > span > a:hover{
 	resize:none;
 	height:15em;
 }
-.contact-section-left-grid input[type="button"]{
+.contact-section-left-grid input[type="submit"]{
 	color:#fff;
 	padding:0.6em 1.8em;
 	border:none;
@@ -849,7 +849,7 @@ ul.contact-section-list li{
 	font-weight:300;
 	margin:7px 0;
 }
-.contact-section-left-grid input[type="button"]:hover {
+.contact-section-left-grid input[type="submit"]:hover {
 	border-bottom: 3px dashed;
 }
 .contact-section-list i{
@@ -1876,7 +1876,7 @@ line-height: 2.5em;
 	.contact-section-left-grid textarea {
 		height: 10em;
 	}
-	.contact-section-left-grid input[type="button"] {
+	.contact-section-left-grid input[type="submit"] {
 		padding: 0.4em 1.6em;
 		font-size: 15px;
 	}
