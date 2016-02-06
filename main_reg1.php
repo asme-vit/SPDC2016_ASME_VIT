@@ -1,19 +1,20 @@
 <?php
 session_start();
+ob_start();
 ?>
 
 <?php
 
-$ticket = $_POST['ticket'];
+//$ticket = $_POST['ticket'];
 $comp = $_POST['comp'];
-
+/*
 if($ticket == 1)
 {
 	$cost = 700;
 }
 else if($ticket == 2)
 {
-	$cost = 1700;
+	$cost = 1750;
 }
 else if($ticket == 3)
 {
@@ -21,7 +22,7 @@ else if($ticket == 3)
 }
 else if($ticket == 4)
 {
-	$cost = 2000;
+	$cost = 2050;
 }
 else if($ticket == 5)
 {
@@ -29,7 +30,7 @@ else if($ticket == 5)
 }
 else if($ticket == 6)
 {
-	$cost = 2200;
+	$cost = 2250;
 }
 else if($ticket == 7)
 {
@@ -39,28 +40,29 @@ else if($ticket == 8)
 {
 	$cost = 550;
 }
+
 $_SESSION["cost"] = $cost;
-
-
+*/
+$_SESSION["cost"] = 0;
 if($comp == 1)
 {
-	header("location:sdc.html");
+	header("location:sdc_reg.php");
 }
 else if($comp == 2)
 {
-	header("location:ogop.html");
+	header("location:ogop_reg.php");
 }
 else if($comp == 3)
 {
-	header("location:ogtw.html");
+	header("location:ogtw_reg.php");
 }
 else if($comp == 4)
 {
-	header("location:ogtp.html");
+	header("location:ogtp_reg.php");
 }
 else if($comp == 5)
 {
-	header("location:ogvp.html");
+	header("location:ogvp_reg.php");
 }
 
 ?>

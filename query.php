@@ -1,4 +1,5 @@
 ﻿<?php
+ob_start();
 include("connection.php");
 
 $sql = "INSERT INTO query values('$_POST[name]','$_POST[email]','$_POST[subject]','$_POST[message]')";

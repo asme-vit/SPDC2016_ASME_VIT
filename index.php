@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+ob_start();
 if(isset($_GET['err'])){
     if ($_GET['err']=="sent") {
         echo '<script>
@@ -10,19 +11,36 @@ if(isset($_GET['err'])){
 ?>
 <html>
 <head>
-<title>SPDC | HOME</title>
+<title>SPDC 2016 VIT Vellore | HOME</title>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
 <script src="js/jquery-ui.min.js"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8" />
+		<meta name="language" content="en-us"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="description" content="STUDENT PROFESSIONAL DEVELOPMENT CONFERENCE(SPDC)-India 2016-The American Society of Mechanical Engineers(ASME)-VIT university,vellore WEBSITE. DEVELOPED BY- MUKUL DEV(DEVMUKUL44@GMAIL.COM),HIANSHU GUPTA(HIMANSHU199565@GMAIL.COM). " />
+		<meta name="keywords" content="SPDC 2016,ASME 2016,SPDC,ASME,STUDENT PROFESSIONAL DEVELOPMENT CONFERENCE,SPDC VIT,VIT university VELLORE,VIT VELLORE,MUKUL DEV,HIMANSHU GUPTA,DEVMUKUL44@GMAIL.COM,MUKUL.DEV@OUTLOOK.COM,mukul.dev2013@vit.ac.in,HIMANSHU199565@GMAIL.COM,MUKUL DEV VIT,MUKUL DEV VIT VELLORE,DEVMUKUL44,HIMANSHU GUPTA VIT, Web Designing" />
+		<meta name="distribution" content="Global" />
+		<meta name="robots" content="index, follow" />
+		<meta name="revisit-after" content="1 days"/>
+		<meta name="publisher" content="ASME INDIA, VIT VELLORE, MUKUL DEV , HIMANSHU GUPTA" />
+		<meta name="copyright" content="ASME INDIA 2016"/>
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--webfont-->
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="js/responsiveslides.min.js"></script>
+  <script type="text/javascript">
+    $(window).load(function(){
+        $('#myModal').modal('show');
+    });
+</script>
 <script>
     $(function () {
       $("#slider").responsiveSlides({
@@ -67,11 +85,11 @@ if(isset($_GET['err'])){
 				<div class="top-menu">
 				  <span class="menu"> </span>
 					<ul>
-						<li><a href="#home" class="scroll">HOME</a></li>
+						<li><a href="#home" class="scroll">Home</a></li>
 						<li><a href="#portfolio" class="scroll">Student Design Competition</a></li>
 						<li><a href="#portfolio" class="scroll">Old Guard Competitions</a></li>
-						<li><a href="#contact-section" class="scroll">CONTACT US</a></li>
-						<li><a href="login.php">REGISTER</a></li>
+						<li><a href="#contact-section" class="scroll">Contact Us</a></li>
+						<li><a href="login.php">Register</a></li>
 						<div class="clearfix"></div>
 					</ul>
 				</div>
@@ -120,6 +138,22 @@ if(isset($_GET['err'])){
 		</div>
 	</div>  -->
     <!-- header-section-ends --> 
+	
+	<!-- Modal -->
+	<div class="container">
+  <div class="modal fade in" id="myModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="images/poster.jpg" style="width:100%;height=80%;">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+  
 	<div class="header-slider" id="home">
 		<div class="slider">
 			<div class="callbacks_container">
@@ -153,7 +187,7 @@ if(isset($_GET['err'])){
 				  <img src="images/4.jpg" alt="">
 				  <div class="caption">
 					<h3><span class="color-1">STUDENT PROFESSIONAL DEVELOPMENT CONFERENCE</span></h3>
-					<p>LEARN,CONNECT,MAKE A DIFFERENCE.</p>
+					<p>LEARN | CONNECT <br>MAKE A DIFFERENCE</p>
 					<br><br><br><br>	  <a class="morebtn" href="login.php">REGISTER</a>
 				  </div>
 				</li>
@@ -225,7 +259,7 @@ if(isset($_GET['err'])){
 ->Technical Poster Presentation
 ->Guest Lectures
 ->Banquet Dinner 
- </pre>
+</pre>
 
  <p>
  Student Professional Development Conference is an event organized by ASME which provides an opportunity to participate in the design and communication skills competition, as well as professional development seminars where students of all engineering disciplines can meet and hear the industry experts, network and become visible to the industry representatives.
@@ -627,7 +661,7 @@ autorickshaws and cabs to take you to VIT university. <br><br><br><br>
 						<img src="images/sayhello.png" alt="" />
 					</div>
 					<div class="container">
-						<h3>have a query?  Say <span>Hello</span></h3>
+						<h3>Have a query?  Say <span>Hello</span></h3>
 					</div>
 					<div class="border-2">
 			            <img src="images/border.png" alt="" />
@@ -657,7 +691,7 @@ autorickshaws and cabs to take you to VIT university. <br><br><br><br>
 							</ul>
 							<ul class="contact-section-list">
 								<li><i class="mail"></i></li>
-								<li>support@spdcindia.org</li>
+								<li>contact@vitspdc.com</li>
 							</ul>
 						</div>
 						<div class="clearfix"></div>
@@ -723,7 +757,7 @@ autorickshaws and cabs to take you to VIT university. <br><br><br><br>
 -->
 		<div class="bottom-footer">
 			<div class="col-md-8 copy-rights">
-				<p>Copyright &copy; 2015  <a href="#" target="target_blank">ASME INDIA
+				<p>Copyright &copy; 2015  <a href="#">ASME INDIA
 				</a></p>
 				<p>
 				Developed By: <a href="https://www.facebook.com/devmukul44" target="_blank">Mukul Dev</a> , <a href="https://www.facebook.com/gupta.himanshu19" target="_blank">Himanshu Gupta
